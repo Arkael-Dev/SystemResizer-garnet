@@ -1,0 +1,46 @@
+apply_patch_space(52776960) || abort("E3006: Not enough free space on /cache to apply patches.");
+ui_print("Target: Xiaomi/miproduct_rock_id/missi:13/TQ3A.230805.001.B2/1932:userdebug/release-keys");
+ui_print("Verified Device ");
+ui_print("Update operation Start");
+
+# --- Start patching dynamic partitions ---
+
+ui_print("          System Resizer           ");
+ui_print("       for Flashing GSI Rom        ");
+ui_print("            on device              ");
+ui_print("      with Dynamic Partition       ");
+                                                                                
+# Update dynamic partition metadata
+
+assert(update_dynamic_partitions(package_extract_file("dynamic_partitions_op_list")));
+
+
+
+# Patch partition system_ext
+show_progress(0.700000, 280);
+ui_print("Patching system_ext image unconditionally...");
+block_image_update(map_partition("system_ext"), package_extract_file("system_ext.transfer.list"), "system_ext.new.dat.br", "system_ext.patch.dat") ||
+  abort("E1001: Failed to update system_ext image.");
+ui_print("system_ext image patched");
+
+# Patch partition product
+
+ui_print("Patching product image unconditionally...");
+block_image_update(map_partition("product"), package_extract_file("product.transfer.list"), "product.new.dat.br", "product.patch.dat") ||
+  abort("E2001: Failed to update product image.");
+ui_print("product image patched");
+
+# Patch partition product
+
+ui_print("Patching product image unconditionally...");
+block_image_update(map_partition("system"), package_extract_file("product.transfer.list"), "product.new.dat.br", "product.patch.dat") ||
+  abort("E2001: Failed to update product image.");
+ui_print("system image patched");
+
+# --- End patching dynamic partitions ---
+
+
+
+ui_print("Installed ");
+set_progress(1.000000);
+

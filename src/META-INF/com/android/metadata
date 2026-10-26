@@ -1,0 +1,11 @@
+anti-rollback-level=0
+ota-required-cache=0                       
+ota-type=BLOCK
+package-type=full
+post-build=POCO/stone_p_id/stone:13/TP1A.220624.014/V14.0.5.0.TLUIDXM:user/release-keys
+post-build-incremental=1696994700
+post-sdk-level=33
+post-security-patch-level=2023-10-05
+post-security_patch=2023-08-05
+post-timestamp=1696994688
+pre-device=ROCK,STONE

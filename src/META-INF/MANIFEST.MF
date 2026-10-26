@@ -1,0 +1,51 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk@loki)
+
+Name: dynamic_partitions_op_list
+SHA1-Digest: fH5tFEWNe1CslGWd0bSuOEk+uCc=
+
+Name: oem.transfer.list
+SHA1-Digest: IHmWZoOgCTmvJ7LDM076mPOyfEk=
+
+Name: oem.new.dat.br
+SHA1-Digest: Maj8v8yTDfYAbO6kfm3UU9m79n4=
+
+Name: oem.patch.dat
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: vbmeta_oem.img
+SHA1-Digest: sJpJJIG+6GrTBEHlv95UhO/Apvo=
+
+Name: dynamic_partition_odm_op_list
+SHA1-Digest: d/TLRw6OEVrmgq0+7Ei/GKKJDmQ=
+
+Name: odm.transfer.list
+SHA1-Digest: c0CdcsBI8nwpJcv9u1AKlKbaI60=
+
+Name: odm.new.dat.br
+SHA1-Digest: n0+TopD4Qb8klbPtRkmdY/1qFms=
+
+Name: odm.patch.dat
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: vbmeta_odm.img
+SHA1-Digest: qexrIARr9WhfzBLuh+5MDM9koCs=
+
+Name: oem.prop
+SHA1-Digest: nqbfkcWLhKFehBP/GkLWrN8Y/5U=
+
+Name: scatter.txt
+SHA1-Digest: CxpC0u7tXHpl5azBzLkE7kjD8f4=
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: ck90IFT04+34Sk2tMZ4gcOE7qGs=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: xnn5qWfPrkpgfxFir4UO3ZVPEeg=
+
+Name: META-INF/com/android/metadata
+SHA1-Digest: Rg+LHFoAQfX+62oZ7T7Rn8Vd2xo=
+
+Name: META-INF/com/android/otacert
+SHA1-Digest: pJbWMhM/mWgb2HtP0PwlPF7ECzw=
+
